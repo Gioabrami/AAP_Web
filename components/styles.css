@@ -1,0 +1,207 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Principal */
+body {
+    background-color: #505050;
+    color: #e9e9e9;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+#titulo {
+    flex: 1;
+    text-align: center;
+    font-size: 40px;
+}
+#home {
+    text-align: right;
+    padding-right: 30px;
+}
+#about {
+    text-align: right;
+    padding-right: 20px;
+}
+main{
+    margin-left: 150px;
+    margin-right: 40px;
+    padding: 100px 20px 0;
+}
+
+/* 
+#desculpas {
+    background-color: rgb(255, 251, 0);
+    border: 2px solid black;
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto 30px;
+    align-items: center;
+}
+#desculpas a {
+    text-decoration: none;
+    color: black;
+} */
+
+/* Menu Lateral */
+nav {
+    height: 100vh;
+    width: 130px;
+    position: fixed;
+    background-color: #333;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 60px;
+}
+nav a {
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #e9e9e9;
+    display: flex;
+}
+nav a:hover {
+    text-decoration: solid;
+    font-size: 20px;
+}
+
+/* Pagina Inicial */
+#pagina_inicial h2 {
+    margin-bottom: 10px;
+}
+#pagina_inicial span {
+    margin-left: 20px;
+}
+#pagina_inicial ul li {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#pagina_inicial p {
+    margin-left: 30px;
+    text-align: justify;
+}
+
+/* Descrição das Atividades*/
+.descricao {
+    height: 20px;
+    overflow: hidden;
+}
+.descricao:hover {
+    height: auto;
+    transition: 3s;
+}
+.descricao h3 {
+    margin-bottom: 10px;
+}
+.descricao span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.descricao ul li {
+    padding-left: 20px;
+}
+hr {
+    margin: 20px 0;
+}
+
+/* Atividades */
+.atividade {
+    border: 2px solid black;
+    padding: 20px;
+}
+#aap2 {
+    background-color: white;
+    color: black;
+}
+#header-aap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 0;
+}
+
+#aap3 {
+    background-color: rgb(0, 73, 119); 
+    color: whitesmoke; 
+}
+
+#aap4 {
+    text-align: center;
+    background-color: rgb(0, 73, 119);
+}
+#aap4 table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+#aap4 table td, #aap4 table th {
+    width: 150px;
+    height: 5px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+}
+#aap4 table th {
+    background-color: whitesmoke;
+    color: #333;
+    font-weight: bold;
+}
+
+#aap5 {
+    text-align: justify;
+    background-color: rgb(0, 73, 119);
+}
+#aap5 h2 {
+    margin-bottom: 10px;
+}
+#aap5 ul>li {
+    padding-top: 10px;
+    font-size: 18px;
+}
+#aap5 ol>li {
+    margin-left: 30px;
+}
+
+#aap6 {
+    text-align: justify;
+    background-color: rgb(0, 73, 119);
+}
+#aap6 h2 {
+    margin-bottom: 10px;
+}
+#aap6 ul>li {
+    background-color: rgb(0, 91, 148);
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#aap6 ol>li {
+    margin-left: 30px;
+    padding: 5px;
+    font-style: italic;
+}
+#aap6 p {
+    padding: 5px;
+    padding-left: 20px;
+}
