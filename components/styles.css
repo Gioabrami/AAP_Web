@@ -84,6 +84,15 @@ nav a:hover {
 }
 
 /* Pagina Inicial */
+#github p {
+    background-color: #1e3d00;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+#github a{
+    color: #65c907; 
+}
 #pagina_inicial h2 {
     margin-bottom: 10px;
 }
