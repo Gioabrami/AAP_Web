@@ -121,6 +121,7 @@ nav a:hover {
 }
 .descricao ul li {
     padding-left: 20px;
+    list-style-type:none;
 }
 hr {
     margin: 20px 0;
@@ -247,4 +248,42 @@ hr {
 #aap7 p {
     padding: 5px;
     padding-left: 20px;
+}
+
+#aap8 {
+    text-align: justify;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: repeat(5, 2fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+#aap8 .campo {
+    color: #333;
+    background-color: #65c907;
+}
+#aap8 #nome {
+    grid-area: nome;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+#aap8 #formacao {
+    grid-area: formacao;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+#aap8 #foto {
+    grid-area: foto;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+#aap8 #experiencia {
+    grid-area: experiencia;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
+#aap8 #extra {
+    grid-area: extra;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
 }
