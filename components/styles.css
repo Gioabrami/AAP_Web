@@ -261,6 +261,7 @@ hr {
 #aap8 .campo {
     color: #333;
     padding: 0 20px 0;
+    background-color: whitesmoke;
 }
 #aap8 #nome {
     grid-area: nome;
