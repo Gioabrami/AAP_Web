@@ -1,3 +1,14 @@
+:root {
+    --bg-color: #505050;
+    --txt-color: #e9e9e9;
+    --header-color: #333;
+    --bg-alternative-color: #ffffff;
+    --txt-alternative-color: #000000;
+    --bg-destaque: #4f9e00;
+    --bg-destaque2: #418100;
+    --txt-destaque: #90f036;
+    --icon-color: invert(1);
+}
 * {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,8 +18,8 @@
 
 /* Principal */
 body {
-    background-color: #505050;
-    color: #e9e9e9;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -17,11 +28,17 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--header-color);
+    color: var(--txt-color);
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 #titulo {
     flex: 1;
@@ -32,7 +49,7 @@ body {
     text-align: right;
     padding-right: 30px;
 }
-#about {
+#theme {
     text-align: right;
     padding-right: 20px;
 }
@@ -40,6 +57,10 @@ main{
     margin-left: 150px;
     margin-right: 40px;
     padding: 100px 20px 0;
+}
+.icon {
+    filter: var(--icon-color);
+    transition: filter 0.3s;
 }
 
 /* 
@@ -62,7 +83,7 @@ nav {
     height: 100vh;
     width: 130px;
     position: fixed;
-    background-color: #333;
+    background-color: var(--header-color);
     padding-top: 10px;
     margin-top: 20px;
 }
@@ -75,23 +96,24 @@ nav a {
     padding: 10px 0;
     text-decoration: none;
     font-size: 18px;
-    color: #e9e9e9;
+    color: var(--txt-color);
     display: flex;
 }
 nav a:hover {
     text-decoration: solid;
+    color: var(--bg-alternative-color);
     font-size: 20px;
 }
 
 /* Pagina Inicial */
 #github p {
-    background-color: #1e3d00;
+    background-color: var(--bg-destaque);
     padding: 10px;
     font-size: 25px;
     text-align: center;
 }
 #github a{
-    color: #65c907; 
+    color: var(--txt-destaque); 
 }
 #pagina_inicial h2 {
     margin-bottom: 10px;
@@ -134,7 +156,7 @@ hr {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #e9e9e9;
+    color: var(--txt-color);
     padding: 5px;
     line-height: 1;
 }
@@ -149,8 +171,8 @@ hr {
     padding: 20px;
 }
 #aap2 {
-    background-color: white;
-    color: black;
+    background-color: var(--bg-alternative-color);
+    color: var(--txt-alternative-color);
 }
 #header-aap2 {
     display: flex;
@@ -162,13 +184,14 @@ hr {
 }
 
 #aap3 {
-    background-color: rgb(0, 73, 119); 
-    color: whitesmoke; 
+    background-color: var(--bg-destaque); 
+    color: var(--txt-alternative-color); 
 }
 
 #aap4 {
     text-align: center;
-    background-color: rgb(0, 73, 119);
+    background-color: var(--bg-destaque);
+    color: var(--txt-alternative-color);
 }
 #aap4 table {
     border-collapse: collapse;
@@ -181,17 +204,23 @@ hr {
     text-align: center;
     vertical-align: middle;
     padding: 5px;
-    border: 2px solid whitesmoke;
+    border: 2px solid var(--txt-alternative-color);
 }
 #aap4 table th {
-    background-color: whitesmoke;
-    color: #333;
+    background-color: var(--bg-destaque2);
+    color: var(--txt-alternative-color);
     font-weight: bold;
+}
+#aap4 a {
+    font-size: 10px;
+    color: var(--txt-alternative-color);
+    text-decoration: none;
 }
 
 #aap5 {
     text-align: justify;
-    background-color: rgb(0, 73, 119);
+    background-color: var(--bg-destaque);
+    color: var(--txt-alternative-color);
 }
 #aap5 h2 {
     margin-bottom: 10px;
@@ -206,13 +235,14 @@ hr {
 
 #aap6 {
     text-align: justify;
-    background-color: rgb(0, 73, 119);
+    background-color: var(--bg-destaque);
+    color: var(--txt-alternative-color);
 }
 #aap6 h2 {
     margin-bottom: 10px;
 }
 #aap6 ul>li {
-    background-color: rgb(0, 91, 148);
+    background-color: var(--bg-destaque2);
     padding: 5px;
     font-size: 18px;
     font-weight: bold;
@@ -229,13 +259,14 @@ hr {
 
 #aap7 {
     text-align: justify;
-    background-color: rgb(0, 73, 119);
+    background-color: var(--bg-destaque);
+    color: var(--txt-alternative-color);
 }
 #aap7 h2 {
     margin-bottom: 10px;
 }
 #aap7 ul>li {
-    background-color: rgb(0, 91, 148);
+    background-color: var(--bg-destaque2);
     padding: 5px;
     font-size: 18px;
     font-weight: bold;
@@ -249,19 +280,28 @@ hr {
     padding: 5px;
     padding-left: 20px;
 }
+#aap7 .toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--txt-alternative-color-color);
+    padding: 5px;
+    line-height: 1;
+}
 
 #aap8 {
     text-align: justify;
-    background-color: whitesmoke;
+    background-color: var(--bg-alternative-color);
     display: grid;
     grid-template-rows: 1fr 1fr 3fr 3fr 6fr 3fr 2fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 #aap8 .campo {
-    color: #333;
+    color: var(--txt-alternative-color);
     padding: 0 20px 0;
-    background-color: whitesmoke;
+    background-color: var(--bg-alternative-color);
 }
 #aap8 #nome {
     grid-area: nome;
@@ -274,7 +314,7 @@ hr {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
     text-align: center;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid var(--txt-alternative-color);
 }
 #aap8 #apresentacao {
     grid-area: apresentacao;
@@ -294,7 +334,7 @@ hr {
     align-items: center;
 }
 #aap8 #foto img {
-    border: 2px solid #333;
+    border: 2px solid var(--txt-alternative-color);
     margin: auto;
     width: 50%;
     height: 90%;
