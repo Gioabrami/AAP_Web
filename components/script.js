@@ -47,7 +47,7 @@ function toggleTheme() {
         root.style.setProperty('--txt-destaque', '#51e2f5');
         root.style.setProperty('--icon-color', 'invert(0)');
 
-        themeIcon.src = 'components/images/lightbulb.svg';
+        themeIcon.src = 'components/images/moon-stars.svg';
         themeIcon.alt = 'Mudar para tema escuro';
 
     } else {
@@ -61,7 +61,7 @@ function toggleTheme() {
         root.style.setProperty('--txt-destaque', '#90f036');
         root.style.setProperty('--icon-color', 'invert(1)');
 
-        themeIcon.src = 'components/images/lightbulb-fill.svg';
+        themeIcon.src = 'components/images/brightness-high-fill.svg';
         themeIcon.alt = 'Mudar para tema claro';
     }
 }
