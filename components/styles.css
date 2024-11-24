@@ -510,3 +510,8 @@ hr {
     padding-left: 30px;
     list-style-type: none;
 }
+
+#nota-rodape {
+    margin: 50px;
+    font-size: 20px;
+}
