@@ -67,5 +67,5 @@ function toggleTheme() {
 }
 
 window.onload = function() {
-    loadPage('components/pages/home.html');
+    loadPage('components/pages/aap08.html');
 };
